@@ -1,0 +1,19 @@
+.ghost-btn {
+  text-align: center;
+  color: #fff;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+  font: {
+    size: 14px;
+    weight: 400;
+  }
+
+  &:hover {
+    background: #fff;
+    color: rgb(18, 131, 197);
+  }
+}
