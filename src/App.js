@@ -19,6 +19,13 @@ class App extends Component {
     // this.restartTimer();
   }
 
+  // 清除setInterval
+  componentWillUnmount () {
+    if (this.Timer) {
+      clearInterval(this.Timer);
+    }
+  }
+
   startTimer = () => {
     if (this.Timer) {
       clearInterval(this.Timer);
