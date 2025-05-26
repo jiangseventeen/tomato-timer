@@ -1,17 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import "./index.scss";
 
-class GhostButton extends Component {
-  render() {
-    return (
-      <button
-        onClick={this.props.onClick}
-        className={this.props.className + " ghost-btn"}
-      >
-        {this.props.children}
-      </button>
-    );
-  }
-}
+const GhostButton = ({ onClick, className = "", children, ...props }) => {
+  return (
+    <button
+      onClick={onClick}
+      className={`${className} ghost-btn`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
 
 export default GhostButton;
